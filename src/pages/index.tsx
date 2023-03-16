@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer/Footer'
 import HomeSeo from '@/components/seo/home/head'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store/store'
+import Developer from './developer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,10 +15,10 @@ export default function Main() {
 
   return (
     <>
-      <HomeSeo/>
+      <HomeSeo />
       <main>
-        <Navbar/>
-        <Home/>
+        {/* <Navbar/> */}
+        <Developer />
         {/* <Footer inter={inter}/> */}
         {/* <h1>{count}</h1>
         <Button variant='contained' onClick={() => dispatch(increment())}>Increment</Button>
