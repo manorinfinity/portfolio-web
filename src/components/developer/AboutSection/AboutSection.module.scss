@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+.about-outer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 72vh;
+    background-color: whitesmoke;
+    padding: 5% 3%;
+    .about-container{
+        display: flex;
+        img{
+            border-radius: 50%;
+            margin-left: 5rem;
+        }
+        h6{
+            width: 30rem;
+            margin-left: 20rem;
+        }
+    }
+    .myrole-container{
+        display: flex;
+        .role-summary{
+            width: 20%;
+            margin-right: 6%;
+            p{
+                margin-top: 4%;
+            }
+        }
+        div:nth-child(4){
+            display: flex;
+            align-self: flex-end;
+            width: 20%;
+            justify-content: flex-end;
+            button{
+                padding: 2% 5%;
+            }
+        }
+    }
+}

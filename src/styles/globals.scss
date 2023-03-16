@@ -1,0 +1,38 @@
+@import './variables';
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    // @extend .custom-scrollbar; 
+    //extend extends the styles in a particular block 
+}
+// .custom-scrollbar {
+//     &::-webkit-scrollbar-track {
+//       box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//       border-radius: 5px;
+//       background-color: #f5f5f5;
+//     }
+  
+//     &::-webkit-scrollbar {
+//       width: 7px;
+//       background-color: #f5f5f5;
+//     }
+  
+//     &::-webkit-scrollbar-thumb {
+//       border-radius: 10px;
+//       box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//       background-color: $primary;
+//     }
+//   }
+.typography-sup{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+  @import '../components/home/Home.module.scss';
+  @import '../components/layout/Navbar/Navbar.module.scss';
+  @import '../components/layout/Loaders/Loader.module.scss';
+  @import '../pages/developer/Developer.module.scss';

@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+.dev-header, .dev-footer{
+    display: flex;
+    width: 92%;
+    justify-content: space-between;
+    padding: 3% 3%;
+    align-items: center;
+    .socials{
+        display: flex;
+        width: 25%;
+        p{
+            font-size: 0.9rem;
+            margin: 0% 2%;
+        }
+    }
+    button{
+        padding: 4%;
+        width: -webkit-fill-available;
+    }
+}
+.dev-footer{
+    padding: 2% 3%;
+}
+.dev-summary{
+    align-self: flex-end;
+    margin-right: 20%;
+    h5, p{
+        width: 25rem;
+        margin-bottom: 4%;
+    }
+    button{
+        padding: 2% 4%;
+        margin: 4% 0%;
+    }
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}

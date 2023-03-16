@@ -1,0 +1,47 @@
+
+.case-slider{
+    display: flex;
+    overflow-y: scroll;
+    width: max-content;
+    .case-container{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        img{
+            position: relative !important;
+        }
+        .case-body{
+            position: absolute;
+            align-self: flex-end;
+            padding: 3%;
+            width: 94%;
+            h4{
+                margin: 4% 0%;
+            }
+            .case-inner-body{
+                display: flex;
+                justify-content: space-between;
+                .case-description{
+                    display: flex;
+                    width: 40vw;
+                    justify-content: space-between;
+                    div:nth-child(2){
+                        width: 30%;
+                    }
+                    p{
+                        margin-top: 1rem;
+                    }
+                }
+                .case-buttons{
+                    display: flex;
+                    justify-content: space-between;
+                    button{
+                     width: max-content;  
+                     padding: 0.2rem 1rem; 
+                     margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

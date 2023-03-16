@@ -1,0 +1,10 @@
+@import '../../components/developer/HeroSection/HeroSection.module.scss';
+@import '../../components/developer/AboutSection/AboutSection.module.scss';
+@import '../../components/developer/CaseStudy/CaseStudy.module.scss';
+@import '../../components/developer/Skillset/Skillset.module.scss';
+@import '../../components/developer/Experience/Experience.module.scss';
+@import '../../components/developer/Contact/Contact.module.scss';
+.developer-container{
+    // background-color: white;
+    height: 200vh;
+}
