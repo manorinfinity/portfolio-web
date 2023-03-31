@@ -54,3 +54,29 @@
         }
     }
 }
+@media (max-width: 900px) {
+    .skillset-outer-container{
+        height: 75vh;
+    }
+}
+@media (max-width: 768px) {
+    .skillset-outer-container{
+        height: 90vh;
+        .skillset-container{
+            flex-direction: column;
+            h5{
+                width: 100%;
+                margin-bottom: 80px;
+            }
+            .skills-container{
+                width: 100%;
+                .skills-list{
+                    margin-top: 40px;
+                    ul{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

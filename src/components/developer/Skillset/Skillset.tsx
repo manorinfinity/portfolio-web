@@ -1,7 +1,9 @@
 import DarkCustomButton from "@/components/common/DarkCustomButton";
 import DarkTypography from "@/components/common/DarkTypography";
+import { RootState } from "@/store/store";
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import {motion} from 'framer-motion';
+import { useSelector } from "react-redux";
 const Skills = (): ReactJSXElement => {
     return (
         <motion.div className='skillset-container'>
@@ -98,10 +100,13 @@ const MyRole = (): ReactJSXElement => {
 }
 
 const Skillset = (): ReactJSXElement => {
+    const mediaQuery = useSelector((state:RootState) => state.mediaQuery);
     return (
         <motion.div className="skillset-outer-container">
             <Skills/>
-            <MyRole/>
+            {!(mediaQuery.tablet || mediaQuery.mobile) && 
+                <MyRole/>
+            }
         </motion.div>
     )
 }

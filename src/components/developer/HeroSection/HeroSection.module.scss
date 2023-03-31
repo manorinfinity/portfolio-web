@@ -11,6 +11,10 @@
         p{
             font-size: 0.9rem;
             margin: 0% 2%;
+            transition: all 0.2s ease-in-out;
+        }
+        p:hover{
+            transform: scale(1.2);
         }
     }
     button{
@@ -38,4 +42,11 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+}
+@media(max-width:768px){
+    .hero-container{
+        .dev-summary{
+            margin-right: 10%;
+        }
+    }
 }

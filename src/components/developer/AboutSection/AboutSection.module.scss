@@ -37,3 +37,54 @@
         }
     }
 }
+@media(max-width: 900px) {
+    .about-outer-container{
+        height: 80vh;
+        .myrole-container{
+            flex-wrap: wrap;
+            justify-content: center;
+            .role-summary{
+                width: 23%;
+            }
+            div:nth-child(4){
+                width: 100%;
+                justify-content: center;
+                button{
+                    padding: 1% 2.5%;
+                    margin-top: 4%;
+                }
+            }
+        }
+    }   
+}
+@media(max-width: 768px) {
+    .about-outer-container{
+        height: 90vh;
+        padding: 6% 4%;
+        .about-container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            h6{
+                margin: 0;
+                margin-top: 10px;
+                width: auto;
+            }
+        }   
+        .myrole-container{
+            .role-summary{
+                width: 100% !important;
+                margin-bottom: 20px;
+                p{
+                    margin-top: 2%;
+                }
+                box-shadow: 10px 10px rgba(0,0,0,0.2);
+            }
+            div:nth-child(4){
+                button{
+                    margin-top: 2%;
+                }
+            }
+        }
+    }   
+}

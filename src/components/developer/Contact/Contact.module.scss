@@ -21,7 +21,34 @@
         .socials{
             display: flex;
             p{
-                margin-right: 10px;
+                margin-right: 10px;transition: all 0.2s ease-in-out;
+            }
+            p:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+@media(max-width: 900px){
+    .contact-container{
+        .main{
+            button{
+                margin-bottom: 20px;
+                transform: scale(1.1);
+            }
+            h1{
+                font-size: 8rem;
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .contact-container{
+        .main{
+            padding-top: 40%;
+            text-align: center;
+            button{
+                transform: scale(1.2);
             }
         }
     }

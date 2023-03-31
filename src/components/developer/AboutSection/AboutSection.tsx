@@ -4,14 +4,21 @@ import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import {motion} from 'framer-motion';
 import Image from "next/image";
 import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
-const About = (): ReactJSXElement => {
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
+const About = ({mediaQuery}: {mediaQuery: {
+    desktop: string,
+    xldisplay: string
+}}): ReactJSXElement => {
     return (
         <motion.div className='about-container'>
             <DarkTypography variant="body1">ABOUT</DarkTypography>
             <DarkTypography variant="subtitle1" >
             I am passionate about everything that hones my creativity and problem solving skills. I seek challenges and strive to shift the course of situation with my work. I can be a ghost, a leader and a mentor as the situation demands. 
             </DarkTypography>
-            <Image src="/images/developer/profile.png" alt="Profile" width={300} height={300} />
+            {(mediaQuery.desktop || mediaQuery.xldisplay) && 
+                <Image src="/images/developer/profile.png" alt="Profile" width={300} height={300} />
+            }
         </motion.div>
     )
 }
@@ -39,9 +46,10 @@ const MyRole = (): ReactJSXElement => {
 }
 
 const AboutSection = (): ReactJSXElement => {
+    const mediaQuery = useSelector((state:RootState) => state.mediaQuery);
     return (
         <motion.div className="about-outer-container">
-            <About/>
+            <About mediaQuery={mediaQuery}/>
             <MyRole/>
         </motion.div>
     )

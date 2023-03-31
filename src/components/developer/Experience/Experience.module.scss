@@ -32,3 +32,21 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .experience-outer-container{
+        height: max-content;
+        .exp-container{
+            flex-direction: column;
+            margin-top: 10px;
+            button{
+                margin-bottom: 20px;
+                padding: 2% 5%;
+                width: 30%;
+            }
+            .exp-item-container{
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
