@@ -6,10 +6,8 @@ import Image from "next/image";
 import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
-const About = ({mediaQuery}: {mediaQuery: {
-    desktop: string,
-    xldisplay: string
-}}): ReactJSXElement => {
+import { MediaQuery } from "@/store/slices/mediaQuerySlice";
+const About = ({mediaQuery}: {mediaQuery: MediaQuery}): ReactJSXElement => {
     return (
         <motion.div className='about-container'>
             <DarkTypography variant="body1">ABOUT</DarkTypography>
